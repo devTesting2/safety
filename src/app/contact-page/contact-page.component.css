@@ -1,0 +1,103 @@
+.contact-page{
+    padding: 7% 0%;
+    min-height:100vh;
+    background-image: url("../../assets/images/contactBackground.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.contact-blue-wrapper{
+    padding: 7% 0% 7% 7%;
+    height: auto;
+    margin: 80px 15% 0px 10%;
+    background-color: rgb(42, 85, 118);
+    opacity: 90%;
+    border-radius: 10px;
+}
+
+.email-form-wrapper {
+    padding: 0% 10%;
+}
+
+.contact-content{
+    color: white;
+}
+
+.contact-title{
+    padding: 0% 0px 10% 15px;
+    font-size: calc(20px + 0.4vw);
+    font-family: 'bahnschrift';
+}
+
+.contact-subtitle{
+    font-size: 17px;
+    font-family: 'ebrima';
+}
+
+.contact-text{
+    height: 55px;
+    margin-bottom: 25px;
+    color: rgb(3, 56, 97);
+    font-weight: 600;
+}
+
+#sendMessage{
+    margin-top: 40px;
+    background: rgb(19,46,67);
+    background: linear-gradient(90deg, rgba(19,46,67,1) 4%, rgba(25,62,88,1) 50%, rgba(32,79,112,1) 96%);
+    color: white;
+    font-family: 'ebrima';
+}
+
+.form-group{
+    margin-bottom: 25px;
+}
+
+textarea{
+    min-height: 155px;
+    max-height: 260px;
+}
+
+.group-items{
+    padding-bottom: 25px;
+}
+
+@media only screen and (max-width: 767px)
+{
+    .col-md-6{      
+        padding: 0;
+    }
+
+    .contact-wrapper{
+        padding-bottom: 0px;
+    }
+    .content{
+        padding-left: calc(5% + 15px);
+        padding-right: calc(5% + 15px);
+        padding-bottom: 25px;
+        padding-top: 25px;
+    }
+
+    .contact-title{
+        padding: 25px 0px 25px 15px;
+    }
+
+    .contact-text{
+        margin: 0% 0% 25px 0%;
+    }
+
+    #sendMessage{
+        margin-top: 25px;
+    }
+
+    .contact-blue-wrapper{
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 0%;
+        border-radius: 0px;
+    }
+}

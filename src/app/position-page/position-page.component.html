@@ -1,0 +1,179 @@
+<div class="position-page">
+   <div class="row m-0">
+      <!-- blue top content -->
+      <div class="col-12 position-top">
+         <div class="position-banner">
+            <div class="position-title">{{position?.positionName}}</div>
+            <div class="position-subtitle">@ProSafety d.o.o.</div>
+         </div>
+      </div>
+   </div>
+   <!-- Position description -->
+   <div class="row m-0">
+      <div class="col-12 description-banner">
+         <div class="position-description fs-16">
+            We are looking for a great engineer to join our team as a Dynamics 365 Developer and help us drive the
+            progress of a FinTech project we’re working on.
+            Think of all the latest MS technologies boosted by Azure cloud infrastructure and drop them into an
+            enterprise FinTech project.
+            Now let’s make a deep dive into the project and its responsibilities
+            {{position?.detailDescription}}
+         </div>
+      </div>
+   </div>
+   <!-- 4 divs content -->
+   <div class="row m-0 position-requirements">
+      <div class="col-12 col-md-4 col-xl-3 requirement-item fs-16">
+         <div class="requirement-title">
+            Your role and responsibilities
+         </div>
+         <div>
+            As a Dynamics developer you
+            would be working on a FinTech
+            project that utilizes virtual
+            payments, cards and wallets
+            for real time funding while
+            tracking and analyzing those
+            payments for a behavior driven
+            brand building system.
+            You would be responsible
+            for configuring, implementing,
+            optimizing and improving
+            business processes through
+            Dynamics 365, provide technical
+            vision and solutions for all
+            implementations. Let’s get
+            to some specifics:
+            {{position?.detailDescription}}
+         </div>
+      </div>
+      <div class="col-12 col-md-4 col-xl-3 requirement-item fs-16">
+         <div class="requirement-title">
+            About you
+         </div>
+         As a Dynamics developer you
+         would be working on a FinTech
+         project that utilizes virtual
+         payments, cards and wallets
+         for real time funding while
+         tracking and analyzing those
+         payments for a behavior driven
+         brand building system.
+         You would be responsible
+         for configuring, implementing,
+         optimizing and improving
+         business processes through
+         Dynamics 365, provide technical
+         vision and solutions for all
+         implementations. Let’s get
+         to some specifics:
+         <!-- {{position?.roleDescription}}  -->
+      </div>
+      <div class="col-12 col-md-4 col-xl-3 requirement-item fs-16">
+         <div class="requirement-title">
+            What next?
+         </div>
+         As a Dynamics developer you
+         would be working on a FinTech
+         project that utilizes virtual
+         payments, cards and wallets
+         for real time funding while
+         tracking and analyzing those
+         payments for a behavior driven
+         brand building system.
+         You would be responsible
+         for configuring, implementing,
+         optimizing and improving
+         business processes through
+         Dynamics 365, provide technical
+         vision and solutions for all
+         implementations. Let’s get
+         to some specifics:
+         <!-- {{position?.steps}} -->
+
+      </div>
+      <div class="col-12 col-xl-3 requirement-item fs-16">
+         <div class="requirement-title last-item">
+            Questions?
+         </div>
+         As a Dynamics developer you
+         would be working on a FinTech
+         project that utilizes virtual
+         payments, cards and wallets
+         for real time funding while
+         tracking and analyzing those
+         payments for a behavior driven
+         brand building system.
+         You would be responsible
+         for configuring, implementing,
+         optimizing and improving
+         business processes through
+         Dynamics 365, provide technical
+         vision and solutions for all
+         implementations. Let’s get
+         to some specifics:
+         <!-- {{position?.questions}} -->
+      </div>
+   </div>
+   <div class="row m-0 position-contact">
+      <div class="col-12 position-form-title">Apply now</div>
+      <div class="col-12">
+         <form [formGroup]="applyForm" (ngSubmit)="sendApplyForm()">
+            <div class="row m-0">
+               <div class="form-group col-12 col-md-6">
+                  <input type="text" class="form-control" required formControlName="applyFullName"
+                     placeholder="First and last name *">
+                  <span class="text-danger fs-16"
+                     *ngIf="itemFormControl.applyFullName.touched && itemFormControl.applyFullName.errors?.required">
+                     Field is required
+                  </span>
+               </div>
+               <div class="form-group col-12 col-md-6">
+                  <input type="text" class="form-control fs-16" required formControlName="applyEmailAdress"
+                     placeholder="Your email adress *">
+                  <span class="text-danger fs-16"
+                     *ngIf="itemFormControl.applyEmailAdress.touched && itemFormControl.applyEmailAdress.errors?.required">
+                     Field is required
+                  </span>
+               </div>
+            </div>
+            <div class="row m-0">
+               <div class="form-group col-12 col-md-6 message-banner">
+                  <textarea type="text" class="form-control" required formControlName="applyMessage"
+                     placeholder="Message *"></textarea>
+                  <span class="text-danger fs-16"
+                     *ngIf="itemFormControl.applyMessage.touched && itemFormControl.applyMessage.errors?.required">
+                     Field is required
+                  </span>
+               </div>
+   
+               <!-- File upload -->
+               <div class="col-12 col-md-6">
+                  <div class="row">
+                     <div class="files-list" *ngFor="let item of attachmentArray;let i= index">
+                        <p> {{ item.name }} </p>
+                        <button class="delete-file" (click)="deleteAttachment(i)">
+                           <img class="trash" src="../../assets/images/remove.png">
+                        </button>
+                     </div>
+                     <div class="form-group col-12 file-banner">
+                           <div class="upload-file-container" (click)="fileInput.click()" (onFileDropped)="uploadfiles($event)">
+                              <input hidden type="file" onclick="this.value = null" placeholder="Attach your resume"
+                                 accept=".doc,.docx,.pdf,image/*,.xls,.xlsx,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                                 #fileInput (change)="uploadfiles($event.target.files)">
+                           </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <button type="submit" class="btn btn-block fs-16" id="sendMessage">Apply</button>
+            <span class="text-success fs-16" *ngIf="emailSent === true">{{'contactPage.emailSuccesMessage' |
+               translate}}</span>
+            <span class="text-danger fs-16" *ngIf="emailFailed === true">{{'contactPage.emailFailedMessage' |
+               translate}}</span>
+         </form>
+      </div>
+
+   </div>
+</div>

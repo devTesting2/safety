@@ -1,0 +1,129 @@
+.left-side, .right-side{
+    min-height: 100vh;
+}
+
+.branches-item {
+    min-height: 50vh;
+}
+
+.col-md-6{
+    padding: 0;             /* vidjet jos */
+}
+
+/* LEFT SIDE */
+
+.automation{
+    background-image: url("../../assets/images/Automation.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.opacity{
+    background: rgba(255, 255, 255, 0.9); 
+    min-height: 50vh;
+    
+}
+.no-opacity{
+    background: rgba(255, 255, 255, 0); 
+    min-height: 50vh;
+    transition: 1.5s;
+}
+
+.railway{
+    background-image: url("../../assets/images/Process.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.energy{
+    background-image: url("../../assets/images/Energy.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.medical{
+    background-image: url("../../assets/images/Medical.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.process-automation{
+    background-image: url("../../assets/images/Railway.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mobile-automation{
+    background-image: url("../../assets/images/Avionics.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.branches-banner{
+    padding:10% 10% 10% 10%;
+    color: rgb(3, 56, 97);
+}
+
+.branches-title{
+    max-width: 50%;
+    padding: 5px 20px;    
+    margin-bottom: 5%;
+    font-weight: 600;
+    font-size: calc(20px + 0.4vw);
+    background-color: rgb(255, 255, 255,0.9);
+    border-radius: 5px;
+    font-family: 'bahnschrift';
+}
+
+.no-title{
+    max-width: 50%;
+    padding: 5px 20px;
+    margin-bottom: 5%;
+    font-weight: 600;
+    font-size: calc(20px + 0.4vw);
+    background-color: none;
+    font-family: 'bahnschrift';
+}
+
+.branches-text-content{
+    width: 75%;
+    background-color: rgb(255, 255, 255,0.9);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'ebrima';
+}
+
+.no-text-background{
+    width: 75%;
+    background-color: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'ebrima';
+}
+
+@media only screen and (max-width: 767px){
+
+    .left-side, .right-side{
+        min-height: auto;
+    }
+    
+    .branches-item {
+        min-height: auto;
+    }
+    
+    .no-title{
+        min-width: 70%;
+    }
+
+    .branches-title{
+        min-width: 70%;
+    }
+
+    .branches-text-content{
+        width: 100%;
+    }
+
+    .no-text-background{
+        width: 100%;
+    }
+}

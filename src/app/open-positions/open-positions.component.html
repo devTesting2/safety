@@ -1,0 +1,22 @@
+<div class="positions-page">
+   <div class="row m-0" id="teamPicture">
+      <div class="col-12 title-banner">
+         <div class="page-title">Join us</div>
+      </div>
+   </div>
+   <div class="position-container fs-16">
+      <div *ngFor="let item of positionData.positions ; let i = index"
+         [class]="positionData.positions.length === i+1? 'row m-0 position-item-none': 'row m-0 position-item'"
+         (click)="openPosition(item.id)">
+         <div class="col-4 position-title">
+            {{item.positionName}}
+         </div>
+         <div class="col-6 position-subtitle">
+            {{item.shortDescription}}
+         </div>
+         <div class="col-2 position-number fs-17">
+            {{item.openings}}
+         </div>
+      </div>
+   </div>
+</div>

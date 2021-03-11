@@ -1,0 +1,32 @@
+<div class="homePage">
+   <div class="site-blocks-cover picture">
+      <div class="row m-0 align-items-center">
+
+         <video #video 
+         (canplay)="video.play()"
+         (loadedmetadata)="video.muted = true" loop  id="myVideo">
+            <source src="../../assets/images/ProSafetyBackgroundLow.mp4" type="video/mp4">
+         </video> 
+          
+         <div id="container" class="noselect">
+            <div class="float-child" #animeObject>
+               <img id="logoPicture" src="../../assets/images/ProSafetyLogo.svg">
+               <div id="title" #animeBottom>
+                  PROSAFETY
+               </div>
+            </div>
+            <div class="float-child">
+               <div class="subtitle" #animeItem1>
+                  SAFETY
+               </div>
+               <div class="subtitle" #animeItem2>
+                  SECURITY
+               </div>
+               <div class="subtitle" #animeItem3>
+                  EXPERTS
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

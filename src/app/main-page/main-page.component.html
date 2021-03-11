@@ -1,0 +1,70 @@
+<div class="site-wrap">
+   <div id="nav" [class]="!scrolled? 'site-navbar-wrap nav': 'site-navbar-wrap nav scrolled-nav-style'">
+      <div class="site-navbar">
+         <div class="row m-0 align-items-center">
+
+            <div class="col-6 col-md-3 col-lg-4 col-xl-5 ">
+               <a id="logo" [class]="!scrolled? 'home-link noselect': 'home-link-scrolled-style noselect'"
+                  (click)="homePage()">PROSAFETY</a>
+            </div>
+
+            <div class="col-6 col-md-9 col-lg-8 col-xl-7">
+               <nav class="site-navigation text-right">
+                  <a id="open-NavBtn" (click)="openNav()">
+                     <img *ngIf="!scrolled" class="hamburger-menu" src="../../assets/images/HamburgerMenu.svg">
+                     <img *ngIf="scrolled" class="hamburger-menu" src="../../assets/images/HamburgerMenuBlue.svg">
+                  </a>
+                  <div id="myNav"
+                     [class]="!navopened && !navclosed? 'container mr-0 overlay' : (navopened ? 'container mr-0 overlay navopened' : 'container mr-0 overlay navclosed') ">
+                     <a href="javascript:void(0)" id="closebtn" (click)="closeNav()">&times;</a>
+                     <ul class="site-menu d-block d-lg-block noselect">
+                        <li class="firstItem"><a [class]="!scrolled? 'nav-link': 'nav-link scrolled'"
+                              (click)="scrollToSection('about')">{{"navbar.about" | translate}}</a></li>
+                        <li><a [class]="!scrolled? 'nav-link': 'nav-link scrolled'"
+                              (click)="scrollToSection('services')">{{"navbar.branches" | translate}}</a></li>
+                        <li><a [class]="!scrolled? 'nav-link': 'nav-link scrolled'"
+                              (click)="scrollToSection('jobs')">{{"navbar.jobs" | translate}}</a></li>
+                        <li><a [class]="!scrolled? 'nav-link': 'nav-link scrolled'"
+                              (click)="scrollToSection('contact')">{{"navbar.contact" | translate}}</a></li>
+                        <li><a [class]="!scrolled? 'nav-link': 'nav-link scrolled'"
+                              (click)="scrollToSection('location')">{{"navbar.location" | translate}}</a></li>
+                        <li>
+                           <select [class]="!scrolled? 'select-list': 'select-list-scrolled-style'"
+                              [(ngModel)]="selectedLang" name="selectLang" (change)="setTranslateLanguage()">
+                              <option *ngFor="let lang of TransLang" value="{{lang}}">{{ lang | uppercase}}</option>
+                           </select>
+                        </li>
+                     </ul>
+                  </div>
+               </nav>
+            </div>
+         </div>
+      </div>
+   </div>
+   <section id="home">
+      <app-home-page></app-home-page>
+   </section>
+
+   <section id="about">
+      <app-about-page></app-about-page>
+      <app-branches-page></app-branches-page>
+   </section>
+
+   <section id="services">
+      <app-services-page></app-services-page>
+   </section>
+
+   <section id="jobs">
+      <app-open-positions></app-open-positions>
+   </section>
+
+   <section id="contact">
+      <app-contact-page></app-contact-page>
+   </section>
+
+   <section id="location">
+      <app-location-page></app-location-page>
+   </section>
+
+   <app-footer-page></app-footer-page>
+</div>

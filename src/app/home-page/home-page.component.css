@@ -1,0 +1,75 @@
+#container {
+    margin: auto;
+    display: none;
+}
+
+.float-child {
+    width: 50%;
+    float: left;
+}  
+
+.homePage{
+    color: white;
+}
+.container-text{
+    text-align: center;
+}
+
+#title{
+    font-size: 16px;
+    font-family: 'bahnschrift';
+    letter-spacing: 2px;
+    margin-top: 3px;;
+}
+
+.subtitle{
+    font-size:24px;
+    font-weight: 300;
+    font-family: 'bahnschrift';
+    margin-left: 10px;
+}
+
+.picture{
+    background: rgb(0,100,174);
+    /* background: linear-gradient(170deg, rgba(0,100,174,1) 0%, rgba(8,76,128,1) 52%, rgba(3,56,97,1));  */
+
+    background: radial-gradient( rgba(0,100,174,1) 0%, rgba(0,100,174,1) 15%, rgba(8,76,128,0.90) 50%, rgba(3,56,97,1) 80%);
+    min-height: 100%; 
+}
+
+#logoPicture{
+    width: 90%;
+    margin-top: 10px;
+    max-width: 105px; 
+    max-height: 100px;
+    background-repeat: repeat;
+}
+
+label{
+    display: block;
+    margin: 0;
+}
+
+#myVideo {
+    position: absolute; 
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover; 
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+video::-webkit-media-controls-start-playback-button {
+    display: none;
+}
+
+@media only screen and (max-width: 767px)
+{
+    .container-text{
+        padding: 0;
+    }
+
+    
+}

@@ -1,0 +1,86 @@
+<div class="branches-page">
+   <div class="row m-0">
+      <div class="col-12 col-md-6">
+         <div class="branches-item automation h-100" (mouseover)="this.hoveredAutomation = true"
+            (mouseleave)="this.hoveredAutomation = false">
+            <div [class]="hoveredAutomation? 'no-opacity h-100': 'opacity h-100'">
+               <div class="branches-banner">
+                  <div [class]="hoveredAutomation? 'branches-title': 'no-title'">{{'branchesPage.automationTitle' |
+                     translate}}</div>
+                  <div [class]="hoveredAutomation? 'branches-text-content fs-16': 'no-text-background fs-16'">
+                     {{'branchesPage.automationText' | translate}}</div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="col-12 col-md-6">
+         <div class="branches-item railway h-100" (mouseover)="this.hoveredProcess = true"
+            (mouseleave)="this.hoveredProcess = false">
+            <div [class]="hoveredProcess? 'no-opacity h-100': 'opacity h-100'">
+               <div class="branches-banner">
+                  <div [class]="hoveredProcess? 'branches-title': 'no-title'">{{'branchesPage.processTitle' |
+                     translate}}</div>
+                  <div [class]="hoveredProcess? 'branches-text-content fs-16': 'no-text-background fs-16'">
+                     {{'branchesPage.processText' | translate}}</div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="row m-0">
+      <div class="col-12 col-md-6">
+         <div class="branches-item energy h-100" (mouseover)="this.hoveredEnergy = true"
+            (mouseleave)="this.hoveredEnergy = false">
+            <div [class]="hoveredEnergy? 'no-opacity h-100': 'opacity h-100'">
+               <div class="branches-banner">
+                  <div [class]="hoveredEnergy? 'branches-title': 'no-title'">{{'branchesPage.energyTitle' | translate}}
+                  </div>
+                  <div [class]="hoveredEnergy? 'branches-text-content fs-16': 'no-text-background fs-16'">
+                     {{'branchesPage.energyText' | translate}}</div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="col-12 col-md-6">
+         <div class="branches-item medical h-100" (mouseover)="this.hoveredMedical = true"
+            (mouseleave)="this.hoveredMedical = false">
+            <div [class]="hoveredMedical? 'no-opacity h-100': 'opacity h-100'">
+               <div class="branches-banner">
+                  <div [class]="hoveredMedical? 'branches-title': 'no-title'">{{'branchesPage.medicalTitle' |
+                     translate}}</div>
+                  <div [class]="hoveredMedical? 'branches-text-content fs-16': 'no-text-background fs-16'">
+                     {{'branchesPage.medicalText' | translate}}</div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="row m-0">
+      <div class="col-12 col-md-6">
+         <div class="branches-item process-automation h-100" (mouseover)="this.hoveredRailway = true"
+            (mouseleave)="this.hoveredRailway = false">
+            <div [class]="hoveredRailway? 'no-opacity h-100': 'opacity h-100'">
+               <div class="branches-banner">
+                  <div [class]="hoveredRailway? 'branches-title': 'no-title'">{{'branchesPage.railwayTitle' |
+                     translate}}</div>
+                  <div [class]="hoveredRailway? 'branches-text-content fs-16': 'no-text-background fs-16'">
+                     {{'branchesPage.railwayText' | translate}}</div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="col-12 col-md-6">
+         <div class="branches-item mobile-automation h-100" (mouseover)="this.hoveredMobile = true"
+            (mouseleave)="this.hoveredMobile = false">
+            <div [class]="hoveredMobile? 'no-opacity h-100': 'opacity h-100'">
+               <div class="branches-banner">
+                  <div [class]="hoveredMobile? 'branches-title': 'no-title'">{{'branchesPage.mobileTitle' | translate}}
+                  </div>
+                  <div [class]="hoveredMobile? 'branches-text-content fs-16': 'no-text-background fs-16'">
+                     {{'branchesPage.mobileText' | translate}}</div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

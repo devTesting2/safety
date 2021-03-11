@@ -1,0 +1,83 @@
+.about-page{
+    min-height: 100vh;
+}
+
+.about-banner-text{
+    padding: 60px 20px 25px 50px;
+    color: black;
+}
+
+#germanyPicture{
+    max-height: 50vh;
+    max-width:100%;
+    margin: 70px 0px;
+    float: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.about-title{
+    font-weight: 600;
+    font-size: calc(20px + 0.4vw);
+    font-family: 'bahnschrift';
+}
+
+.text-part{
+    padding-top: 20px;
+    font-family: 'ebrima';
+
+}
+
+/* World css */ 
+.world-stripes{
+    background-image: url("../../assets/images/WorldStripes.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+}
+
+#bosniaPicture{
+    max-width:100%;
+    max-height: 45vh;
+    padding-left: 5%;
+    margin: 70px 0px;
+    float: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 767px){
+    .about-page{
+        min-height: auto;
+    }
+    .about-banner-text{
+        margin:0px;
+        padding: 20px 10%;
+    }
+
+    .germany-banner, .bosnia-banner{
+        display: block;
+        text-align: center;
+    }
+    #germanyPicture{
+        margin: 25px 0px 0px 0px;
+        float: none;
+        text-align: center;
+    }
+    #bosniaPicture{
+        padding-left: calc(5% + 15px);
+        padding-right: calc(5% + 15px);
+        margin: 25px 0px 0px 0px;
+        float: none;
+    }
+    
+    .world-stripes{
+        min-height: auto;
+    }
+
+    .text-part{
+        width: 100%;
+        padding-top: 25px;
+    }
+}

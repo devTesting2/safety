@@ -1,0 +1,64 @@
+{
+    "positions":[
+        {
+            "id":1,
+            "positionName":"Embedded Software developer",
+            "shortDescription":"kratak opis 1",
+            "openings":"x1",
+
+            "detailDescription":"detaljan opis ",
+            "roleDesc":"rola",
+            "requirements":"zahtjevi",
+            "steps":"ostalo",
+            "questions":"ostalo"
+        },
+        {
+            "id":2,
+            "positionName":".NET Developer",
+            "shortDescription":"kratak opis 2",
+            "openings":"x2",
+
+            "detailDescription":"long description",
+            "roleDescription":"rola",
+            "requirements":"zahtjevi",
+            "steps":"ostalo",
+            "questions":"ostalo"
+        },
+        {
+            "id":3,
+            "positionName":"Java developer",
+            "shortDescription":"kratak opis 3",
+            "openings":"x3",
+
+            "detailDescription":"long description",
+            "roleDescription":"rola",
+            "requirements":"zahtjevi",
+            "steps":"ostalo",
+            "questions":"ostalo"
+        },
+        {
+            "id":4,
+            "positionName":"Java developer",
+            "shortDescription":"kratak opis 4",
+            "openings":"x3",
+
+            "detailDescription":"long description",
+            "roleDescription":"rola",
+            "requirements":"zahtjevi",
+            "steps":"ostalo",
+            "questions":"ostalo"
+        },
+        {
+            "id":5,
+            "positionName":"Generalna aplikacija",
+            "shortDescription":"Uvijek smo zainteresovani za talente",
+            "openings":"",
+
+            "detailDescription":"long description",
+            "roleDescription":"rola",
+            "requirements":"zahtjevi",
+            "steps":"ostalo",
+            "questions":"ostalo"
+        }
+    ]
+}

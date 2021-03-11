@@ -1,0 +1,203 @@
+<div class="services-page">
+  <div class="row m-0 top-row">
+
+    <div class="d-sm-none d-md-block col-md-1 col-lg-2 col-xl-3"></div>
+
+    <div class="col-12 col-md-5 col-lg-4 col-xl-3 left-banner">
+      <div>
+        <img id="chipPicture" src="../../assets/images/Chip.png">        
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-5 col-xl-5 right-banner">
+      <div class="service-title">{{'servicePage.embeddedTitleText' | translate}}</div>
+      <div class="text-part fs-16">
+        {{'servicePage.embeddedTextPart1' | translate}}
+      </div>
+      <div class="text-part fs-16">
+        {{'servicePage.embeddedTextPart2' | translate}}
+      </div>
+
+      <!-- just for mobile version -->
+      <div class="text-part d-xl-none d-lg-none d-md-none fs-16">
+        {{'servicePage.embeddedTextPart3' | translate}}
+      </div>
+      <div class="text-part d-xl-none d-lg-none d-md-none fs-16">
+        {{'servicePage.embeddedTextPart4' | translate}}
+      </div>
+      
+      <div class="read" *ngIf="!clicked" (click)="readMore()">Read more <i class="fa fa-chevron-circle-down" aria-hidden="true"></i></div>
+      <div class="read" *ngIf="clicked" (click)="readMore()">Read less <i class="fa fa-chevron-circle-up" aria-hidden="true"></i></div>
+
+    </div>
+
+    <div class="d-none d-md-block col-lg-1"></div>
+
+  </div>
+
+  <!-- text under chip picture for WEB PART 3 -->
+  <div class="row m-0 text-row mobile-text" *ngIf="clicked">
+    <div class="d-sm-none d-md-block col-md-1 col-lg-2 col-xl-3"></div>
+    <div class="d-sm-block d-md-block col-md-10 col-lg-9 col-xl-8 chip-text fs-16">
+      {{'servicePage.embeddedTextPart3' | translate}}
+      mobilniiiiiiiiiiiiiiiiiiiii
+      <br><br>
+    </div>
+    <div class="d-none d-md-block col-md-1 col-xl-1"></div>
+  </div>
+
+  <!-- PART 4  prepravit kao 3 ako ostane READ MORE !!!! -->
+  <div class="row m-0 mobile-text" *ngIf="clicked">
+    <div class="d-none d-md-block col-md-1 col-lg-2 col-xl-3"></div>
+    <div class="d-sm-none d-md-block col-md-10 col-lg-9 col-xl-7 chip-text fs-16">
+      {{'servicePage.embeddedTextPart4' | translate}}
+    </div>
+    <div class="d-none d-md-block col-md-1 col-xl-2"></div>
+  </div>
+
+
+  <!-- SOFTWARE VERIFICATION -->
+  <div class="row m-0 top-center-row">
+
+    <div class="d-sm-none d-md-block col-md-1 col-lg-2 col-xl-3"></div>
+
+
+
+
+    <div class="d-block col-12 col-md-6 col-lg-5 col-xl-4 center-banner-left">
+      <div class="service-title">{{'servicePage.hardwareSoftwareTitle' | translate}}</div>
+      <div class="text-part-center fs-16">
+        {{'servicePage.hardwareSoftwareTextPart1' | translate}}
+      </div>
+      <!-- text for lg screen  ul items -->
+      <div class="text-part-center">
+        <ul class="hardware-items d-md-none d-xl-block fs-16">
+          <li>{{'servicePage.hardwareItemText1' | translate}}</li>
+          <li>{{'servicePage.hardwareItemText2' | translate}}</li>
+          <li>{{'servicePage.hardwareItemText3' | translate}}</li>
+        </ul>
+      </div>
+    </div>
+
+
+
+    <!-- picture  -->
+    <div class="d-block d-md-block col-12 col-md-5 col-lg-4 col-xl-4 center-banner-right">
+      <div>
+        <img id="verificationPicture" src="../../assets/images/Verification.png">
+      </div>
+    </div>
+
+
+    <div class="d-none d-md-block col-lg-1"></div>
+  </div>
+
+  <!-- for md ul li items -->
+  <div class="row m-0">
+    <div class="d-sm-none d-md-block col-md-1 col-lg-2 col-xl-3"></div>
+
+    <div class="d-sm-block d-md-block col-md-10 col-lg-9 col-xl-8 mob-space">
+      <ul class="ul-optional d-sm-none d-md-block d-xl-none fs-16">
+        <li>{{'servicePage.hardwareItemText1' | translate}}</li>
+        <li>{{'servicePage.hardwareItemText2' | translate}}</li>
+        <li>{{'servicePage.hardwareItemText3' | translate}}</li>
+      </ul>
+    </div>
+    <div class="d-none d-md-block col-md-1 col-xl-1"></div>
+
+  </div>
+
+
+
+  <!-- HARDWARE AND SOFTWARE ITEMS -->
+  <div class="row m-0 top-space">
+    <div class="d-sm-none d-md-block col-md-1 col-lg-2 col-xl-3"></div>
+
+    <div class="d-block d-md-block col-md-5 col-xl-4">
+      <div class="center-hardware-banner">
+        <div class="hardware-title">{{'servicePage.hardwareVerificationTitle' | translate}}</div>
+        <ul class="hardware-items-text fs-16">
+          <li>{{'servicePage.hardwareVerificationItem1' | translate}}</li>
+          <li>{{'servicePage.hardwareVerificationItem2' | translate}}</li>
+          <li>{{'servicePage.hardwareVerificationItem3' | translate}}</li>
+          <li>{{'servicePage.hardwareVerificationItem4' | translate}}</li>
+          <li>{{'servicePage.hardwareVerificationItem5' | translate}}</li>
+          <li>{{'servicePage.hardwareVerificationItem6' | translate}}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="d-block d-md-block col-md-5 col-xl-4">
+      <div class="center-software-banner">
+        <div class="software-title">{{'servicePage.softwareVerificationTitle' | translate}}</div>
+        <ul class="software-items-text fs-16">
+          <li>{{'servicePage.softwareVerificationItem1' | translate}}</li>
+          <li>{{'servicePage.softwareVerificationItem2' | translate}}</li>
+          <li>{{'servicePage.softwareVerificationItem3' | translate}}</li>
+          <li>{{'servicePage.softwareVerificationItem4' | translate}}</li>
+          <li>{{'servicePage.softwareVerificationItem5' | translate}}</li>
+          <li>{{'servicePage.softwareVerificationItem6' | translate}}</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="d-none d-md-block col-md-1 col-xl-1"></div>
+  </div>
+
+
+
+
+
+  <!-- PCB layout design -->
+  <div class="row m-0 top-row">
+    <div class="d-sm-none d-md-block col-md-1 col-lg-2 col-xl-3"></div>
+
+    
+    <div class="col-12 col-md-5 col-lg-4 col-xl-3 left-banner">
+      <div>
+        <img id="pcbPicture" src="../../assets/images/PLCLayout.png">
+      </div>
+    </div>
+
+
+    <!-- PCB text -->
+    <div class="col-12 col-md-6 col-lg-5 col-xl-5 right-banner">
+      <div class="service-title">{{'servicePage.pcbTitle' | translate}}</div>
+      <div class="text-part fs-16">
+        {{'servicePage.pcbText' | translate}}
+      </div>
+      <ul class="pcb-items d-none d-xl-block fs-16">
+        GORNJIIIIIIIIIIIIIIII
+        <li>{{'servicePage.pcbItem1' | translate}}</li>
+        <li>{{'servicePage.pcbItem2' | translate}}</li>
+        <li>{{'servicePage.pcbItem3' | translate}}</li>
+        <li>{{'servicePage.pcbItem4' | translate}}</li>
+        <li>{{'servicePage.pcbItem5' | translate}}</li>
+      </ul>
+    </div>
+
+
+    <div class="d-none d-md-block col-lg-1"></div>
+  </div>
+
+  <!-- for md ul li items -->
+  <div class="row m-0">
+    <div class="d-sm-none d-md-block col-md-1 col-lg-2 col-xl-3"></div>
+
+
+
+    <div class="d-sm-block col-md-10 col-lg-9 col-xl-8">
+      <ul class="medium-items d-xl-none d-block fs-16">
+        DONJIIIII
+        <li>{{'servicePage.pcbItem1' | translate}}</li>
+        <li>{{'servicePage.pcbItem2' | translate}}</li>
+        <li>{{'servicePage.pcbItem3' | translate}}</li>
+        <li>{{'servicePage.pcbItem4' | translate}}</li>
+        <li>{{'servicePage.pcbItem5' | translate}}</li>
+      </ul>
+    </div>
+
+
+    <div class="d-none d-md-block col-md-1 col-xl-1"></div>
+
+  </div>
+</div>
